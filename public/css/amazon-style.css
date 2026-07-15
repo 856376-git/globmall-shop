@@ -1,0 +1,187 @@
+/* ===== GlobMall Amazon-style theme ===== */
+:root{
+  --amz-navy:#131921; --amz-navy2:#232f3e; --amz-accent:#febd69; --amz-accent-hover:#f3a847;
+  --amz-orange:#ff9900; --amz-link:#007185; --amz-price:#b12704; --amz-star:#ffa41c;
+  --amz-bg:#eaeded; --amz-card:#fff; --amz-border:#d5d9d9; --amz-text:#0f1111; --amz-muted:#565959;
+}
+body{background:var(--amz-bg); color:var(--amz-text); font-family:"Amazon Ember",Arial,Helvetica,sans-serif;}
+a{color:var(--amz-link);} a:hover{color:#c7511f; text-decoration:underline;}
+
+.container{max-width:1500px;}
+
+/* ---------- HEADER ---------- */
+.amz-top{background:var(--amz-navy); color:#fff;}
+.amz-top a{color:#fff; text-decoration:none;}
+.amz-top a:hover{border:1px solid #fff; border-radius:2px;}
+.amz-top-inner{display:flex; align-items:stretch; gap:.2rem; padding:.3rem .5rem;}
+.amz-logo{display:flex; align-items:center; gap:.35rem; padding:.35rem .6rem; border:1px solid transparent; font-weight:700; font-size:1.25rem; white-space:nowrap;}
+.amz-logo:hover{border:1px solid #fff; border-radius:2px;}
+.amz-logo i{color:var(--amz-accent);}
+.amz-deliver{padding:.35rem .55rem; border:1px solid transparent; line-height:1.1; white-space:nowrap;}
+.amz-deliver:hover{border:1px solid #fff; border-radius:2px;}
+.amz-deliver .loc-d{display:flex; align-items:center;}
+.amz-deliver .loc-d i{color:#fff; margin-right:.2rem; font-size:1.05rem; position:relative; top:1px;}
+.amz-deliver .loc-s{font-size:.72rem; color:#ddd;}
+.amz-deliver .loc-c{font-weight:700; font-size:.85rem;}
+.amz-search{flex:1; display:flex; align-items:center; padding:.5rem .3rem; max-width:none;}
+.amz-search form{display:flex; width:100%; height:40px; border-radius:4px; overflow:hidden;}
+.amz-search select{border:none; background:#f3f3f3; border-right:1px solid #ccc; padding:0 .5rem; font-size:.8rem; color:#555; max-width:60px;}
+.amz-search input{flex:1; border:none; padding:0 .6rem; font-size:.95rem; outline:none;}
+.amz-search button{background:var(--amz-accent); border:none; width:46px; font-size:1.1rem; color:var(--amz-navy);}
+.amz-search button:hover{background:var(--amz-accent-hover);}
+.amz-tool{display:flex; align-items:center; gap:.45rem; padding:.35rem .45rem; border:1px solid transparent; white-space:nowrap;}
+.amz-tool:hover{border:1px solid #fff; border-radius:2px;}
+.amz-flag{font-size:1.05rem;}
+.amz-tool .t-s{font-size:.72rem; color:#ddd;}
+.amz-tool .t-l{font-weight:700; font-size:.85rem;}
+.amz-cart{display:flex; align-items:flex-end; gap:.25rem; padding:.35rem .45rem; border:1px solid transparent; position:relative;}
+.amz-cart:hover{border:1px solid #fff; border-radius:2px;}
+.amz-cart i{font-size:1.6rem;}
+.amz-cart .c-count{position:absolute; top:-2px; left:18px; color:var(--amz-orange); font-weight:700; font-size:.95rem;}
+.amz-cart .c-l{font-weight:700; font-size:.9rem; padding-bottom:2px;}
+
+/* ---------- NAV BAR ---------- */
+.amz-nav{background:var(--amz-navy2); color:#fff;}
+.amz-nav-inner{display:flex; align-items:stretch; gap:.15rem; padding:0 .5rem; overflow-x:auto;}
+.amz-nav a{color:#fff; text-decoration:none; padding:.55rem .6rem; font-size:.85rem; white-space:nowrap; border:1px solid transparent;}
+.amz-nav a:hover{border:1px solid #fff; border-radius:2px;}
+.amz-nav .amz-burger{font-weight:700; display:flex; align-items:center; gap:.3rem;}
+
+/* ---------- HERO BANNER ---------- */
+.amz-hero{position:relative; background:linear-gradient(180deg,#232f3e 0%, #eaeded 100%);}
+.amz-hero .amz-hero-track{height:300px; position:relative; overflow:hidden;}
+.amz-hero .amz-hero-slide{position:absolute; inset:0; opacity:0; transition:opacity .6s; display:flex; align-items:center; justify-content:center; background-size:cover; background-position:center;}
+.amz-hero .amz-hero-slide.active{opacity:1;}
+.amz-hero .amz-hero-slide .amz-hero-cap{background:rgba(255,255,255,.96); padding:1.1rem 1.5rem; border-radius:6px; max-width:460px; box-shadow:0 4px 14px rgba(0,0,0,.15);}
+.amz-hero .amz-hero-cap h2{font-size:1.5rem; font-weight:700; margin-bottom:.3rem;}
+.amz-hero .amz-hero-cap p{color:var(--amz-muted); margin-bottom:.8rem;}
+.amz-hero .amz-hero-cap .btn-amz-yellow{background:var(--amz-orange); border:none; color:#0f1111; font-weight:700; padding:.45rem 1.2rem; border-radius:6px;}
+.amz-hero .amz-hero-dots{position:absolute; bottom:10px; left:50%; transform:translateX(-50%); display:flex; gap:.4rem;}
+.amz-hero .amz-hero-dots span{width:9px; height:9px; border-radius:50%; background:rgba(255,255,255,.5); cursor:pointer;}
+.amz-hero .amz-hero-dots span.active{background:#fff;}
+
+/* ---------- SECTION CARD ---------- */
+.amz-section{margin-bottom:1.2rem;}
+.amz-section .amz-sec-card{background:var(--amz-card); padding:1.1rem 1.2rem 1.4rem; margin:0;}
+.amz-sec-head{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:.8rem;}
+.amz-sec-title{font-size:1.3rem; font-weight:700; margin:0;}
+.amz-sec-link{font-size:.85rem; color:var(--amz-link);}
+.amz-sec-link:hover{color:#c7511f; text-decoration:underline;}
+
+/* ---------- HORIZONTAL PRODUCT CARD ---------- */
+.amz-pcard{display:flex; background:var(--amz-card); border:1px solid var(--amz-border); border-radius:6px; overflow:hidden; height:100%; position:relative; transition:box-shadow .15s;}
+.amz-pcard:hover{box-shadow:0 2px 8px rgba(0,0,0,.18);}
+.amz-pcard .pc-img{width:120px; flex:0 0 120px; background:#fff; display:flex; align-items:center; justify-content:center; padding:.5rem;}
+.amz-pcard .pc-img img{max-width:100%; max-height:110px; object-fit:contain;}
+.amz-pcard .pc-img .pc-noimg{font-size:2.2rem; color:#ccc;}
+.amz-pcard .pc-body{flex:1; padding:.5rem .6rem; display:flex; flex-direction:column; min-width:0;}
+.amz-pcard .pc-cat{font-size:.68rem; color:var(--amz-muted); text-transform:uppercase; letter-spacing:.3px;}
+.amz-pcard .pc-title{font-size:.82rem; line-height:1.3; margin:.15rem 0 .2rem; font-weight:600; color:var(--amz-text);}
+.amz-pcard .pc-title a{color:var(--amz-text); text-decoration:none;}
+.amz-pcard .pc-title a:hover{color:var(--amz-link); text-decoration:underline;}
+.amz-pcard .pc-stars{display:flex; align-items:center; gap:.2rem; font-size:.72rem; color:var(--amz-muted); margin-bottom:.2rem;}
+.amz-pcard .pc-stars i{color:var(--amz-star); font-size:.72rem;}
+.amz-pcard .pc-price{display:flex; align-items:baseline; gap:.3rem; margin-top:auto;}
+.amz-pcard .pc-price .pc-now{color:var(--amz-price); font-weight:700; font-size:1.05rem;}
+.amz-pcard .pc-price .pc-was{color:var(--amz-muted); text-decoration:line-through; font-size:.8rem;}
+.amz-pcard .pc-badge{position:absolute; top:6px; left:6px; background:var(--amz-price); color:#fff; font-size:.62rem; font-weight:700; padding:1px 4px; border-radius:2px; z-index:2;}
+.amz-pcard .pc-prime{font-size:.7rem; color:var(--amz-link); font-weight:700;}
+.amz-pcard .pc-add{margin-top:.35rem;}
+.amz-pcard .pc-add button{background:var(--amz-orange); border:none; border-radius:6px; color:#0f1111; font-weight:600; font-size:.76rem; padding:.25rem .6rem; width:100%;}
+.amz-pcard .pc-add button:hover{background:#e88a00;}
+
+/* compact vertical card variant (grid) */
+.amz-pcard-v{display:flex; flex-direction:column; background:var(--amz-card); border:1px solid var(--amz-border); border-radius:6px; overflow:hidden; height:100%; position:relative; transition:box-shadow .15s;}
+.amz-pcard-v:hover{box-shadow:0 2px 8px rgba(0,0,0,.18);}
+.amz-pcard-v .pcv-img{height:180px; display:flex; align-items:center; justify-content:center; background:#fff; padding:.6rem;}
+.amz-pcard-v .pcv-img img{max-width:100%; max-height:100%; object-fit:contain;}
+.amz-pcard-v .pcv-img .pc-noimg{font-size:3rem; color:#ccc;}
+.amz-pcard-v .pcv-body{padding:.6rem .7rem .8rem; display:flex; flex-direction:column; flex:1;}
+.amz-pcard-v .pc-badge{position:absolute; top:6px; left:6px; background:var(--amz-price); color:#fff; font-size:.62rem; font-weight:700; padding:1px 4px; border-radius:2px; z-index:2;}
+.amz-pcard-v .pcv-title{font-size:.85rem; line-height:1.3; margin:.15rem 0 .25rem; font-weight:600;}
+.amz-pcard-v .pcv-title a{color:var(--amz-text); text-decoration:none;}
+.amz-pcard-v .pcv-title a:hover{color:var(--amz-link); text-decoration:underline;}
+.amz-pcard-v .pcv-stars{display:flex; align-items:center; gap:.2rem; font-size:.72rem; color:var(--amz-muted); margin-bottom:.2rem;}
+.amz-pcard-v .pcv-stars i{color:var(--amz-star); font-size:.72rem;}
+.amz-pcard-v .pcv-price{display:flex; align-items:baseline; gap:.3rem; margin-top:auto; margin-bottom:.3rem;}
+.amz-pcard-v .pcv-price .pc-now{color:var(--amz-price); font-weight:700; font-size:1.1rem;}
+.amz-pcard-v .pcv-price .pc-was{color:var(--amz-muted); text-decoration:line-through; font-size:.8rem;}
+.amz-pcard-v .pcv-add button{background:var(--amz-orange); border:none; border-radius:6px; color:#0f1111; font-weight:600; font-size:.8rem; padding:.3rem .6rem; width:100%;}
+.amz-pcard-v .pcv-add button:hover{background:#e88a00;}
+.amz-pcard-v .pcv-add button:disabled{background:#c0c0c0; color:#666;}
+
+/* ---------- GRID wrapper ---------- */
+.amz-row{display:grid; gap:.7rem;}
+.amz-col{display:flex;}
+.amz-col > *{width:100%;}
+
+/* ---------- QUICK CATEGORY TILES (top of home) ---------- */
+.amz-tile-card{background:var(--amz-card); border:none; border-radius:6px; padding:1rem 1.1rem 1.3rem; height:100%;}
+.amz-tile-card h3{font-size:1.05rem; font-weight:700; margin-bottom:.6rem;}
+.amz-tile-card .amz-tile-img{width:100%; height:150px; object-fit:cover; border-radius:4px; background:#f3f3f3;}
+.amz-tile-card .amz-tile-grid{display:grid; grid-template-columns:1fr 1fr; gap:.5rem; margin-bottom:.6rem;}
+.amz-tile-card .amz-tile-grid img{width:100%; height:90px; object-fit:cover; border-radius:3px; background:#f3f3f3;}
+.amz-tile-card .amz-tile-link{font-size:.82rem; color:var(--amz-link); font-weight:600;}
+.amz-tile-card .amz-tile-link:hover{color:#c7511f; text-decoration:underline;}
+
+/* ---------- LIGHTNING DEALS strip ---------- */
+.amz-ld-card{background:var(--amz-card); border:1px solid var(--amz-border); border-radius:6px; padding:.6rem .8rem; display:flex; align-items:center; gap:.8rem; height:100%;}
+.amz-ld-card .ld-img{width:110px; height:110px; flex:0 0 110px; object-fit:contain;}
+.amz-ld-card .ld-body{flex:1; min-width:0;}
+.amz-ld-card .ld-title{font-size:.8rem; font-weight:600; line-height:1.3; margin-bottom:.2rem;}
+.amz-ld-card .ld-title a{color:var(--amz-text); text-decoration:none;}
+.amz-ld-card .ld-title a:hover{color:var(--amz-link); text-decoration:underline;}
+.amz-ld-card .ld-price{color:var(--amz-price); font-weight:700; font-size:1.1rem;}
+.amz-ld-card .ld-deal-badge{background:#cc0c39; color:#fff; font-size:.7rem; font-weight:700; padding:1px 5px; border-radius:2px;}
+.amz-ld-bar{height:6px; background:#eee; border-radius:4px; overflow:hidden; margin:.3rem 0;}
+.amz-ld-bar > div{height:100%; background:#cc0c39;}
+.amz-ld-card .ld-claim{font-size:.72rem; color:var(--amz-muted);}
+
+/* ---------- FOOTER ---------- */
+.amz-footer-back{background:var(--amz-navy2); color:#fff; text-align:center; padding:.9rem; font-weight:600;}
+.amz-footer-back a{color:#fff; text-decoration:none;}
+.amz-footer-main{background:var(--amz-navy); color:#ddd; padding:2.2rem 0 2.6rem;}
+.amz-footer-main h4{color:#fff; font-size:.9rem; font-weight:700; margin-bottom:.6rem;}
+.amz-footer-main ul{list-style:none; padding:0; margin:0;}
+.amz-footer-main li{margin-bottom:.35rem;}
+.amz-footer-main a{color:#ddd; text-decoration:none; font-size:.82rem;}
+.amz-footer-main a:hover{text-decoration:underline;}
+.amz-footer-legal{background:var(--amz-navy); color:#999; border-top:1px solid #3a4553; padding:1.4rem 0; text-align:center; font-size:.8rem;}
+.amz-footer-legal .amz-fl-logo{font-weight:700; color:#fff; font-size:1.1rem;}
+.amz-footer-legal .amz-fl-logo i{color:var(--amz-accent);}
+
+/* ---------- SHOP LIST ---------- */
+.amz-shop-main{background:var(--amz-card); padding:1rem 1.2rem 1.4rem; min-height:80vh;}
+.amz-shop-side{background:var(--amz-card); padding:1rem .9rem; position:sticky; top:70px;}
+.amz-shop-side h6{font-size:.85rem; font-weight:700; margin-bottom:.4rem; border-bottom:1px solid var(--amz-border); padding-bottom:.3rem;}
+.amz-shop-side .amz-side-sec{margin-bottom:1.2rem;}
+.amz-shop-side label{font-size:.82rem; display:flex; align-items:center; gap:.35rem; margin-bottom:.2rem; cursor:pointer;}
+.amz-shop-result-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:.9rem; padding-bottom:.6rem; border-bottom:1px solid var(--amz-border);}
+.amz-shop-result-head h2{font-size:1.2rem; font-weight:700; margin:0;}
+.amz-shop-list .amz-pcard{margin-bottom:.7rem;}
+
+/* ---------- PRODUCT DETAIL ---------- */
+.amz-pd{background:var(--amz-bg); padding-top:1rem;}
+.amz-pd-main{background:var(--amz-card); padding:1.4rem 1.6rem; border-radius:6px;}
+.amz-pd-thumbs img{width:54px; height:54px; object-fit:cover; border:1px solid var(--amz-border); border-radius:3px; margin-bottom:.3rem; cursor:pointer;}
+.amz-pd-thumbs img.active{border-color:var(--amz-orange); box-shadow:0 0 0 1px var(--amz-orange);}
+.amz-pd-title{font-size:1.35rem; font-weight:600; line-height:1.25;}
+.amz-pd-stars i{color:var(--amz-star);}
+.amz-pd-price-main{color:var(--amz-price); font-size:1.5rem; font-weight:700;}
+.amz-pd-buybox{background:#fff; border:1px solid var(--amz-border); border-radius:6px; padding:1.1rem;}
+.amz-pd-buybox .bb-price{color:var(--amz-price); font-size:1.4rem; font-weight:700;}
+.amz-pd-buybox .bb-btn{background:var(--amz-orange); border:none; border-radius:6px; color:#0f1111; font-weight:600; padding:.5rem; width:100%; margin-bottom:.4rem;}
+.amz-pd-buybox .bb-btn:hover{background:#e88a00;}
+
+/* ---------- MOBILE NAV ---------- */
+.amz-mobnav{display:none; position:fixed; bottom:0; left:0; right:0; background:var(--amz-navy); color:#fff; z-index:1030; padding:.35rem 0; justify-content:space-around;}
+.amz-mobnav a{color:#fff; text-decoration:none; display:flex; flex-direction:column; align-items:center; gap:.15rem; font-size:.66rem;}
+.amz-mobnav a i{font-size:1.2rem;}
+
+@media (max-width: 991px){
+  .amz-search{order:3; width:100%; padding:.4rem .3rem;}
+  .amz-top-inner{flex-wrap:wrap;}
+  .amz-deliver{display:none;}
+  .amz-mobnav{display:flex;}
+  body{padding-bottom:60px;}
+}

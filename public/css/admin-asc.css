@@ -1,0 +1,42 @@
+﻿/* ===== GlobMall Admin (Seller Central style) ===== */
+:root{--asc-nav:#232f3e;--asc-bg:#f4f4f4;--asc-side:#fff;--asc-border:#d5d9d9;--asc-link:#007185;--asc-active:#e7f3fe;--asc-active-bd:#007185;}
+body.admin-body{background:var(--asc-bg);font-family:"Amazon Ember",Arial,Helvetica,sans-serif;font-size:14px;color:#0f1111;}
+
+/* top bar */
+.asc-top{background:#131921;color:#fff;height:56px;display:flex;align-items:center;padding:0 1rem;position:sticky;top:0;z-index:1030;}
+.asc-top .asc-logo{font-weight:700;font-size:1.15rem;color:#fff;text-decoration:none;display:flex;align-items:center;gap:.4rem;}
+.asc-top .asc-logo i{color:#febd69;}
+.asc-top .asc-merchant{color:#ddd;font-size:.78rem;border-left:1px solid #555;padding-left:.8rem;margin-left:.8rem;}
+.asc-top .asc-search{flex:1;max-width:520px;margin:0 1.2rem;}
+.asc-top .asc-search form{display:flex;height:34px;border-radius:4px;overflow:hidden;}
+.asc-top .asc-search input{flex:1;border:none;padding:0 .6rem;font-size:.85rem;}
+.asc-top .asc-search button{background:#febd69;border:none;width:40px;color:#131921;}
+.asc-top .asc-user{display:flex;align-items:center;gap:.5rem;cursor:pointer;}
+.asc-top .asc-user i{font-size:1.3rem;}
+.asc-top .asc-user .asc-u-s{font-size:.68rem;color:#ddd;}
+.asc-top .asc-user .asc-u-n{font-weight:700;font-size:.85rem;}
+
+/* layout */
+.asc-wrap{display:flex;align-items:flex-start;}
+.asc-side{width:220px;flex-shrink:0;background:var(--asc-side);border-right:1px solid var(--asc-border);min-height:calc(100vh - 56px);position:sticky;top:56px;overflow-y:auto;}
+.asc-side nav{padding:.6rem .5rem;}
+.asc-side .asc-item{display:flex;align-items:center;gap:.5rem;padding:.5rem .7rem;border-radius:4px;color:#0f1111;text-decoration:none;font-size:.85rem;margin-bottom:1px;}
+.asc-side .asc-item:hover{background:#f0f0f0;}
+.asc-side .asc-item.active{background:var(--asc-active);border-left:3px solid var(--asc-active-bd);padding-left:calc(.7rem - 3px);font-weight:700;}
+.asc-side .asc-item i{width:18px;text-align:center;}
+.asc-side .asc-sec{border-top:1px solid var(--asc-border);margin:.5rem 0;padding-top:.5rem;}
+.asc-main{flex:1;min-width:0;padding:1.3rem 1.5rem;}
+
+/* generic admin card */
+.asc-card{background:#fff;border:1px solid var(--asc-border);border-radius:6px;padding:1.1rem 1.3rem;margin-bottom:1rem;}
+.asc-card h1,.asc-card h2,.asc-card h3{font-weight:700;}
+.asc-stat{display:flex;flex-direction:column;gap:.2rem;}
+.asc-stat .label{font-size:.72rem;color:#565959;text-transform:uppercase;letter-spacing:.3px;}
+.asc-stat .value{font-size:1.5rem;font-weight:700;color:#0f1111;}
+.asc-stat .delta{font-size:.78rem;}
+.asc-table th{font-size:.78rem;color:#565959;font-weight:700;text-transform:uppercase;letter-spacing:.2px;background:#fafafa;}
+.asc-table td{vertical-align:middle;}
+
+/* breadcrumb-ish */
+.asc-crumb{font-size:.82rem;color:#565959;margin-bottom:.8rem;}
+.asc-crumb a{color:var(--asc-link);}

@@ -1,0 +1,45 @@
+:root { --primary: #2563eb; --primary-dark: #1d4ed8; --success: #22c55e; --danger: #ef4444; --warning: #f59e0b; --info: #3b82f6; }
+body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8fafc; -webkit-font-smoothing: antialiased; }
+
+/* Navbar */
+.navbar { backdrop-filter: blur(10px); background: rgba(255,255,255,0.95) !important; }
+.navbar-brand { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+
+/* Product Card */
+.card-product { transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s; border: none; border-radius: 12px; overflow: hidden; }
+.card-product:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+.card-product img { height: 240px; object-fit: cover; transition: transform 0.3s; }
+.card-product:hover img { transform: scale(1.03); }
+.card-product .card-body { padding: 16px; }
+.card-product .category-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; font-weight: 600; }
+
+.price-tag { color: var(--primary); font-weight: 700; font-size: 1.15rem; }
+.compare-price { color: #94a3b8; font-size: 0.85rem; text-decoration: line-through; }
+.discount-badge { background: var(--danger); color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+
+/* Buttons */
+.btn-add-cart { background: var(--primary); border-color: var(--primary); font-weight: 500; }
+.btn-add-cart:hover { background: var(--primary-dark); border-color: var(--primary-dark); transform: translateY(-1px); }
+
+/* Hero */
+.hero-section { background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%); color: #fff; }
+.hero-section h1 { font-size: 2.75rem; font-weight: 800; letter-spacing: -0.03em; }
+
+/* Category */
+.category-card { text-align: center; padding: 24px 16px; background: #fff; border-radius: 16px; transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #e2e8f0; }
+.category-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.06); }
+
+/* Admin */
+.admin-stat { background: #fff; border-radius: 12px; padding: 20px; transition: transform 0.2s; }
+.admin-stat:hover { transform: translateY(-2px); }
+.admin-stat .num { font-size: 1.75rem; font-weight: 800; }
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.card-product { animation: fadeIn 0.4s ease-out; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 { font-size: 2rem; }
+    .card-product img { height: 180px; }
+}
