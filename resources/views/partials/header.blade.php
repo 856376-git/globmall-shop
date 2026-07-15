@@ -1,4 +1,4 @@
-﻿<header class="amz-top sticky-top">
+<header class="amz-top sticky-top">
     <div class="amz-top-inner">
         <a class="amz-logo" href="{{ route('home') }}">
             <i class="bi bi-globe2"></i> GlobMall
@@ -23,11 +23,13 @@
             </form>
             <div id="searchDropdown" style="display:none; position:absolute; top:100%; left:0; right:0; background:#fff; border:1px solid #ccc; border-radius:4px; box-shadow:0 4px 8px rgba(0,0,0,.2); max-height:420px; overflow-y:auto; z-index:1050;"></div>
         </div>
-        <div class="amz-tool d-none d-lg-flex">
-            <span class="amz-flag">@if(app()->getLocale()=='en') EN @else CN @endif</span>
-            <div>
-                <div class="t-s">{{ __('messages.language') }}</div>
-                <div class="t-l">{{ app()->getLocale()=='en' ? 'EN' : '中文' }}</div>
+        <div class="amz-tool dropdown d-none d-lg-flex">
+            <div data-bs-toggle="dropdown" role="button">
+                <span class="amz-flag">@if(app()->getLocale()=='en') EN @else CN @endif</span>
+                <div>
+                    <div class="t-s">{{ __('messages.language') }}</div>
+                    <div class="t-l">{{ app()->getLocale()=='en' ? 'EN' : '中文' }}</div>
+                </div>
             </div>
             <div class="dropdown-menu dropdown-menu-end">
                 <a class="dropdown-item" href="{{ LaravelLocalization::getLocalizedURL('en') }}">{{ __("messages.english") }}</a>

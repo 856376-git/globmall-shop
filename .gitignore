@@ -25,3 +25,8 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+/storage/framework/views
+/storage/framework/cache
+.env.bak-*
+.env.broken-*

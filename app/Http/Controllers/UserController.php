@@ -54,7 +54,7 @@ class UserController extends Controller
             'email'    => $request->email,
             'password' => Hash::make($request->password),
             'role'     => 'customer',
-            'status'   => 'active',
+            'status'   => 1,
         ];
 
         if (config('services.twilio.enabled', false)) {
