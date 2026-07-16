@@ -44,7 +44,8 @@
 - **Stripe Checkout** — 真实支付链路
 - **bcrypt / Hash::make** — 密码加密
 
-> [截图占位 2] 数据库 ER 图 / schema 设计截图
+> [测试用图/globmall-er-diagram.svg](C:\\Users\\朱烁楷\\Desktop\\测试用图\\globmall-er-diagram.svg)
+> 数据库 ER 图 / schema 设计截图
 > 可用 MySQL Workbench 导出，或 dbdiagram.io 生成
 
 ---
