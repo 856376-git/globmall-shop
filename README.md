@@ -1,4 +1,4 @@
-# GlobMall · 跨境电商平台 / Cross-Border E-Commerce Platform
+<img width="1941" height="1317" alt="image" src="https://github.com/user-attachments/assets/f3ae00c1-d7b8-4380-8a81-8a8c06c810e2" /># GlobMall · 跨境电商平台 / Cross-Border E-Commerce Platform
 
 > 一个面向跨境零售场景的全栈电商平台，UI 参照 Amazon Storefront + Seller Central 双端形态重新打磨。
 > 基于 **Laravel 13 / PHP 8.5 / MySQL / Bootstrap 5**，自研 i18n、RBAC 权限体系、Stripe 支付、SMS 验证码、reCAPTCHA 风控等完整链路。
@@ -44,7 +44,8 @@
 - **Stripe Checkout** — 真实支付链路
 - **bcrypt / Hash::make** — 密码加密
 
-> [测试用图/globmall-er-diagram.svg](C:\\Users\\朱烁楷\\Desktop\\测试用图\\globmall-er-diagram.svg)
+><img width="1941" height="1317" alt="image" src="https://github.com/user-attachments/assets/003a83ed-823b-4c49-a2b3-24009f13a992" />
+
 > 数据库 ER 图 / schema 设计截图
 > 可用 MySQL Workbench 导出，或 dbdiagram.io 生成
 
