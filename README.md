@@ -16,7 +16,8 @@
 | i18n | 中 / 英 双语，mcamara/laravel-localization / __() 全站 localized |
 | 第三方集成 | Stripe 支付 / Twilio SMS 验证码 / Google reCAPTCHA |
 
-> [截图占位 1] 首页 hero + 分类入口 + 闪电特卖区截图
+<img width="2549" height="1352" alt="899aec241f018d35b3be2e9a3aa879c0" src="https://github.com/user-attachments/assets/291b29ce-689e-4842-81f6-9fb1b48f58cc" />
+
 > 建议宽度 1280px，存到 docs/screenshots/home.png
 
 ---
