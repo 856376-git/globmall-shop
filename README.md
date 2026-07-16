@@ -1,4 +1,3 @@
-<img width="1941" height="1317" alt="image" src="https://github.com/user-attachments/assets/f3ae00c1-d7b8-4380-8a81-8a8c06c810e2" /># GlobMall · 跨境电商平台 / Cross-Border E-Commerce Platform
 
 > 一个面向跨境零售场景的全栈电商平台，UI 参照 Amazon Storefront + Seller Central 双端形态重新打磨。
 > 基于 **Laravel 13 / PHP 8.5 / MySQL / Bootstrap 5**，自研 i18n、RBAC 权限体系、Stripe 支付、SMS 验证码、reCAPTCHA 风控等完整链路。
