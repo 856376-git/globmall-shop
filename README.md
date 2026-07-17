@@ -1,4 +1,4 @@
-<img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/8fca377f-2ba5-444e-b0a0-b13e3aaf60f8" />
+
 > 一个面向跨境零售场景的全栈电商平台，UI 参照 Amazon Storefront + Seller Central 双端形态重新打磨。
 > 基于 **Laravel 13 / PHP 8.5 / MySQL / Bootstrap 5**，自研 i18n、RBAC 权限体系、Stripe 支付、SMS 验证码、reCAPTCHA 风控等完整链路。
 > 从一份 CRMEB 二开骨架出发，逐模块重写到生产级形态，作为 PHP 开发实战作品集，从 0 到 1 完整落地。
