@@ -1,4 +1,4 @@
-
+<img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/8fca377f-2ba5-444e-b0a0-b13e3aaf60f8" />
 > 一个面向跨境零售场景的全栈电商平台，UI 参照 Amazon Storefront + Seller Central 双端形态重新打磨。
 > 基于 **Laravel 13 / PHP 8.5 / MySQL / Bootstrap 5**，自研 i18n、RBAC 权限体系、Stripe 支付、SMS 验证码、reCAPTCHA 风控等完整链路。
 > 从一份 CRMEB 二开骨架出发，逐模块重写到生产级形态，作为 PHP 开发实战作品集，从 0 到 1 完整落地。
@@ -144,7 +144,8 @@ Route::prefix('admin')->name('admin.')
 - **Light sidebar**：active 项左侧高亮条 + 背景填充 + 图标
 - 所有 menu items 用 __() 包裹，中英切换全站生效
 
-> [截图占位 6] 后台 admin dashboard 整页截图
+
+<img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/ee4b5b53-72e5-4c18-8b58-0f6d03e503e5" />
 
 ---
 
@@ -155,7 +156,7 @@ Route::prefix('admin')->name('admin.')
 - 所有 Blade 文本统一用 __() 包裹，含前端按钮文案
 - 连后台的 status badge（System / Assigned / Removed / Granted / Revoked）和 audit log 动作描述都做了 localized
 
-> [截图占位 7] 中英文切换前后对比截图
+
 
 ---
 
@@ -228,7 +229,8 @@ globmall/
 - **前台主题大改**：从 CRMEB 默认模板出发，整页重写成 Amazon + Seller Central 双形态，约 2200 行 CSS 重写 + Blade 重构
 - **i18n 修复链路**：旧 messages.php 乱码 + 编码错乱，逐条用 UTF-8 no-BOM 重写，补齐 380+ 条，前台后台 Blade 文案全部对接
 - **RBAC 设计落地**：role + permission join 表，每个后台资源拆细粒度（category.view / category.create / category.edit / category.delete），中间件链串起来
-- **版本管理**：Git 分支管理 + 推送至 GitHub 公开仓库，处理过 remote + PAT 凭证、credential 与 token 缓存问题
+- **版本管理**：Git 分支管理 + 推送至 GitHub 公开仓库，处理过 remote + PAT 凭证、credential 与 token 缓存问题\
+<img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/8f085a3b-dd12-4de6-8bf3-82fcbd497fea" />
 <img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/2dc71c7f-78ee-4676-8229-fe23301fef52" />
 <img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/0a13b027-aafa-40e8-a8ad-5a5136521e4f" />
 
