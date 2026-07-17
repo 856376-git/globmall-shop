@@ -120,11 +120,7 @@ Route::prefix('admin')->name('admin.')
                          'permission:category.create|permission:category.edit|permission:category.delete']);
         // ... 24 个 admin resource
     });
-```
 
-> [截图占位 3] 前台首页 + 后台 dashboard 拼图截图
-
----
 
 ## 前台视觉重做
 
