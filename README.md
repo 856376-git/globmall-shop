@@ -229,8 +229,8 @@ globmall/
 - **i18n 修复链路**：旧 messages.php 乱码 + 编码错乱，逐条用 UTF-8 no-BOM 重写，补齐 380+ 条，前台后台 Blade 文案全部对接
 - **RBAC 设计落地**：role + permission join 表，每个后台资源拆细粒度（category.view / category.create / category.edit / category.delete），中间件链串起来
 - **版本管理**：Git 分支管理 + 推送至 GitHub 公开仓库，处理过 remote + PAT 凭证、credential 与 token 缓存问题
-
-> [截图占位 8] 后台权限管理 / 角色编辑页 + audit log 列表截图
+<img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/2dc71c7f-78ee-4676-8229-fe23301fef52" />
+<img width="2549" height="1352" alt="image" src="https://github.com/user-attachments/assets/0a13b027-aafa-40e8-a8ad-5a5136521e4f" />
 
 ---
 
