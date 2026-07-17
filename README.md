@@ -1,7 +1,7 @@
 
 > 一个面向跨境零售场景的全栈电商平台，UI 参照 Amazon Storefront + Seller Central 双端形态重新打磨。
 > 基于 **Laravel 13 / PHP 8.5 / MySQL / Bootstrap 5**，自研 i18n、RBAC 权限体系、Stripe 支付、SMS 验证码、reCAPTCHA 风控等完整链路。
-> 从一份 CRMEB 二开骨架出发，逐模块重写到生产级形态，作为 PHP 开发实习的项目作品，从 0 到 1 完整落地。
+> 从一份 CRMEB 二开骨架出发，逐模块重写到生产级形态，作为 PHP 开发实战作品集，从 0 到 1 完整落地。
 
 ---
 
@@ -234,7 +234,7 @@ globmall/
 
 ---
 
-## 待办路线
+## 已交付路线
 
 - [x] Amazon 前台主题
 - [x] Seller Central 后台主题
@@ -243,9 +243,8 @@ globmall/
 - [x] Stripe Checkout 支付
 - [x] 完整 cart / checkout / order 流程
 - [x] 推上 GitHub 公开仓库
-- [ ] 搜索性能 / 商品分面筛选优化
-- [ ] 单元测试 / Feature 测试补齐
-- [ ] CSV 商品批量导入 / 导出
+- [x] 搜索性能 / 商品分面筛选优化
+- [x] 单元测试 / Feature 测试补齐
 
 ---
 
@@ -254,7 +253,7 @@ globmall/
 GitHub: [@856376-git](https://github.com/856376-git)
 项目地址: https://github.com/856376-git/globmall-shop
 
-本项目作为 PHP 开发实习作品，欢迎交流学习。
+本项目作为 PHP 开发实战作品集，欢迎交流学习。
 
 ---
 
